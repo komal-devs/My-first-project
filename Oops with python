@@ -1,0 +1,122 @@
+'''def generateTable(n) :'''def generateTable(n) :
+    with open(f"tables/table_{n}.txt","w") as f :
+        for i in range(1,11) :
+            f.write(f"{n} X {i} = {n*i}\n")
+
+for i in range(2,21):
+    generateTable(i)'''
+
+
+## oops with python
+
+'''class employee():
+    language = "python" # this is object attribute
+    salary = 12000000
+
+harry = employee()
+harry.name = "Harry"
+harry.language = "javascript" # this is class attribute
+print(harry.name,harry.language)'''
+
+
+# here name is object attribute but #language and salary are class attribute #as they dirctly belong to class
+
+
+'''class employee():
+    language = "python"
+    salary = 1200000
+    
+
+    def __init__(self,name,salary,language): # a dunder method which is automatically called
+        self.name = name
+        self.salary = salary
+        self.language = language
+        print("I am creating an object")
+
+
+    def get_info(self) :
+        print(f"the language is {self.language} and salary is {self.salary}")
+    
+    @staticmethod
+    def greet():
+        print("GOOD MORNING")
+
+harry = employee("komal",2600000,"python" )
+
+print(harry.salary,harry.name)
+harry.greet()'''
+
+
+'''class programmer :
+    company = "Microsoft"
+    def __init__(self,name,salary,pin) :
+        self.name = name
+        self.salary = salary
+        self.pin = pin
+
+p = programmer("komal", 240000, 201009)
+
+print(p.name,p.salary,p.company,p.pin)
+
+r = programmer("rohan",890000,2346)
+
+print(r.name,r.salary,r.company,r.pin)'''
+
+
+''' class calculator :
+    def __init__(self,n):
+        self.n = n
+    def square(self) :
+        print(f"the square of {self.n} is {self.n*self.n}")
+    def cube(self):
+        print(f" the cube of {self.n} is {self.n*self.n*self.n}")
+    def cuberoot(self):
+        print(f"the cuberoot of {self.n} is {self.n**1/2}")
+
+a = calculator(3)
+a.square()
+a.cube()
+a.cuberoot() '''
+
+
+'''class Demo :
+    a = 4
+
+o = Demo()
+print(o.a) # prints the class interface 
+o.a = 0 # instance interface is set
+print(o.a) # prints the instance interface 
+print(Demo.a) # prints the class interface
+
+'''
+'''from random import randint
+class Train :
+    def __init__(self,TrainNo):
+        self.TrainNo = TrainNo
+    def book(self,to,fro) :
+        print(f"Train is booked in Train no {self.TrainNo} from {fro} to {to}")
+
+    def getstatus(self):
+        print(f" Train no {self.TrainNo} is running successfully")
+
+    def getfare(self,to,fro):
+        print(f"Train fare of {self.TrainNo} from {fro} to {to} is { randint(2250,45789)}")
+
+t = Train(12347)
+t.book("gzb","meerut")
+t.getstatus()
+t.getfare("gzb","meerut")'''
+
+
+class Employee :
+    company = "ITC"
+    def show(self) :
+        print(f"the name is {self.name} and salary is {self.salary}")
+
+class programmer :
+    company = "ITC infotech"
+    print(f"the name is {self.name} and salary is {self.salary})
+
+
+
+
